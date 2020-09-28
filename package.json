@@ -1,0 +1,20 @@
+{
+  "name": "c-dance.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev" : "vuepress dev docs",
+    "docs:build" : "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-c-dance:c-dance/c-dance.github.io"
+  },
+  "author": "c-dance",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.6.0"
+  }
+}
