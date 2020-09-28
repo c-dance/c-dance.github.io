@@ -1,15 +1,12 @@
 #!/usr/bin/env sh
-
+git add -A
+git commit -m "docs modified"
+git push origin master
 # abort on errors
 set -e
 
 # build
 npm run docs:build
-
-# docs push
-git add -A
-git commit -m "docs modified"
-git push origin master
 
 # navigate into the build output directory
 cd docs/.vuepress/dist
