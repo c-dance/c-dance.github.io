@@ -31,7 +31,7 @@ module.exports={
             {
               title: 'vuepress',
               path  : '/vuepress/',
-              children: [ '/vuepress/*' ],
+              children: [ /* */],
               initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
             },
           ]  
