@@ -25,13 +25,13 @@ module.exports={
               collapsable: false, // optional, defaults to true
               sidebarDepth: 1,    // optional, defaults to 1
               children: [
-                '/Vue/vue-cli/'
+                '/Vue/vue-cli'
               ]
             },
             {
               title: 'VuePress',
               path  : '/VuePress/',
-              children: [ '/VuePress/*'],
+              //children: [ ],
               initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
             },
           ]  
