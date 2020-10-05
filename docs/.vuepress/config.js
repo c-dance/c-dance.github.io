@@ -1,17 +1,21 @@
 const path = require('path')
 
 module.exports={
-    title : "c-dance 공부하고 만들고",
-
+    title : "c-dance 공부 수집",
     resolve: {
       alias: {
         '@img' : "./public/img"
       }
     },
+    favicon : "/img/favicon.png",
 
 
     themeConfig: {
-        //logo: 'logo.png',
+        logo : "/img/logo.png", //default : public
+        head: [
+          ['link', { rel: 'icon', href: '/img/logo.png' }]
+        ],
+        favicon : "/img/favicon.png",
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Profile', link: '/Profile/' },
@@ -29,10 +33,12 @@ module.exports={
               ]
             },
             {
-              title: 'VuePress',
-              path  : '/VuePress/',
-              //children: [ ],
-              initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
+              title: 'Algorithm',
+              path  : '/Algorithm/',
+              children: [ '/Algorithm/BruteForce/'],
+              //initialOpenGroupIndex: -1, // optional, defaults to 0, defines the index of initially opened subgroup
+              collapsable: false, // optional, defaults to true
+              sidebarDepth: 2,    // optional, defaults to 1
             },
           ]  
       },
