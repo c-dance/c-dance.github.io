@@ -2,25 +2,18 @@ const path = require('path')
 
 module.exports={
     title : "c-dance 공부 수집",
-    resolve: {
-      alias: {
-        '@img' : "./public/img"
-      }
-    },
-    favicon : "/img/favicon.png",
-
 
     themeConfig: {
-        logo : "/img/logo.png", //default : public
-        head: [
-          ['link', { rel: 'icon', href: '/img/logo.png' }]
-        ],
-        favicon : "/img/favicon.png",
+        logo : "/img/logo2.png", //default : public
+        searchPlaceholder:"search...",
+        lastUpdated: 'Last Updated',
+        repo:'c-dance', // address -> github로 이동,
+        smoothScroll:true,
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Profile', link: '/Profile/' },
-          { text: 'git', link: 'https://github.com/c-dance', target:'_self' }
+          { text: 'About', link: '/About/' },
         ],
+
         sidebar: [
             {
               title: 'Vue',   // required
@@ -36,10 +29,10 @@ module.exports={
               title: 'Algorithm',
               path  : '/Algorithm/',
               children: [ '/Algorithm/BruteForce/'],
-              //initialOpenGroupIndex: -1, // optional, defaults to 0, defines the index of initially opened subgroup
-              collapsable: false, // optional, defaults to true
-              sidebarDepth: 2,    // optional, defaults to 1
+              initialOpenGroupIndex: -1, // optional, defaults to 0, defines the index of initially opened subgroup
+              collapsable: true, // optional, defaults to true
+              sidebarDepth: 1,    // optional, defaults to 1
             },
-          ]  
+          ]   
       },
 }
