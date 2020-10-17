@@ -1,4 +1,5 @@
 const path = require('path')
+const fs = require('fs')
 
 module.exports={
     title : "c-dance 공부 수집",
@@ -14,25 +15,29 @@ module.exports={
           { text: 'About', link: '/About/' },
         ],
 
-        sidebar: [
-            {
-              title: 'Vue',   // required
-              path: '/Vue/',      // optional, link of the title, which should be an absolute path and must exist
-              initialOpenGroupIndex: -1,
-              collapsable: false, // optional, defaults to true
-              sidebarDepth: 1,    // optional, defaults to 1
-              children: [
-                '/Vue/vue-cli'
-              ]
-            },
-            {
-              title: 'Algorithm',
-              path  : '/Algorithm/',
-              children: [ '/Algorithm/BruteForce/'],
-              initialOpenGroupIndex: -1, // optional, defaults to 0, defines the index of initially opened subgroup
-              collapsable: true, // optional, defaults to true
-              sidebarDepth: 1,    // optional, defaults to 1
-            },
-          ]   
-      },
+        sidebar : [
+          {path : "/git/", title:"Git", children:["/git/","/git/vue-cli"], collapsable: true }
+        ]
+}
+}
+
+
+function getChildren(folder){
+  const extention = [".md",".html"]
+
+  const files = fs   
+    .readdirSync(path.join(`${__dirname}/../${folder}`)) // 일치하는 디렉토리의 하위 요소들 불러오기
+    .filter(
+      (item) => //item : 각개 파일
+        item.toLowerCase() != "readme.md" &&
+        item.toLowerCase()!='index.md' &&
+        fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() && //하위 요소이며 파일인 것,
+        extention.includes(path.extname(item)) //파일의 확장자가 .md or .html인 것
+      )
+      
+  
+
+  return [[...files]] //... : 열거
+  
+    
 }
