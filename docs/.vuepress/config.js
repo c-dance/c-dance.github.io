@@ -14,10 +14,10 @@ module.exports={
           { text: 'Home', link: '/' },
           { text: 'About', link: '/About/' },
         ],
-        //sidebar : [ 
-          //{path : "/git/", title:"Git", children:["/"], collapsable: true },
-         // {path : "/docs/adobe/", title : "ADOBE", childern : ["[Ps] 선택 툴"], collapsable:true}
-        //]
+        sidebar : [ 
+         {path : "/git/", title:"Git", children:[''], collapsable: false },
+         {path : "/adobe/", title : "ADOBE", childern : ['', '[PS] 선택 툴'], collapsable:false}
+        ]
 }
 };
 
