@@ -15,9 +15,9 @@ module.exports={
           { text: 'About', link: '/About/' },
         ],
         sidebar :[
-         {path : "/git/", title:"Git", children:['/git/깃허브 페이지 만들기[1]','/git/Vuepress & 깃허브 페이지[2]', '/git/gitignore파일'], collapsable:true },
-         {path : '/adobe/photoshop/', title:"PHOTOSHOP", children:['','/adobe/photoshop/Ps-선택 툴'], collapsable:true},
-         {path : '/adobe/illust/', title : "ILLUST", children:[''], collapsable:true}
+         {path : "/git/", title:"Git", children:['/git/gitpage1','/git/gitpage2', '/git/gitignore'], collapsable:true },
+         {path : '/photoshop/', title:"PHOTOSHOP", children:['/photoshop/Ps-선택 툴','/photoshop/Ps-문자', '/photoshop/Ps-색 보정','/photoshop/Ps-사진배경'], collapsable:true},
+         {path : '/illust/', title : "ILLUST", children:[], collapsable:true}
         ]
 }
 }
