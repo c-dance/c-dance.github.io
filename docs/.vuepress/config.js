@@ -14,9 +14,9 @@ module.exports={
           { text: 'Home', link: '/' },
           { text: 'About', link: '/About/' },
         ],
-        sidebar : [ 
-         {path : "/git/", title:"Git", children:['','/git/깃허브 페이지 만들기 [1]'], collapsable: false },
-         {path : "/adobe/", title : "ADOBE", childern : ['', '/adobe/[PS] 선택 툴'], collapsable:false}
+        sidebar :[
+         {path : "/git/", title:"Git", children:['/git/깃허브 페이지 만들기 [1]'], collapsable:true },
+         {path : "/adobe/", title : "ADOBE", childern : ['/adobe/[PS] 선택 툴'], collapsable:true}
         ]
 }
-};
+}
