@@ -1,6 +1,6 @@
 # Vuepress & 깃허브 페이지[2] - 설치 및 업로드
 
-# Vuepress란?
+## Vuepress란?
 
 - 정적 페이지 생성기
 
@@ -10,13 +10,14 @@
 
 - vuepress는 뷰, 뷰 라우터, 뷰 웹팩 구조를 따르고 있다. 공식 페이지도 뷰 프레스로 만들어졌다.
 
-[Introduction | VuePress](https://vuepress.vuejs.org/guide/#features)
+    [Introduction | VuePress](https://vuepress.vuejs.org/guide/#features)
 
 - Evan You가 직접 소개한 영상
 
     [https://www.youtube.com/watch?v=lIv1ItUzktc&t=41s](https://www.youtube.com/watch?v=lIv1ItUzktc&t=41s)
 
-# Vuepress 테마
+
+## Vuepress 테마
 
 지킬처럼 뷰도 테마들이 있다. 지킬보다 수는 적다. 테마를 사용하지 않더라도 뷰프레스를 처음부터 만들고 커스텀하려 할 때, 코드들을 보면서 도움을 받을 수 있을 것 같다. 
 
@@ -24,7 +25,8 @@
 
 [vuepressjs/awesome-vuepress](https://github.com/vuepressjs/awesome-vuepress#plugins)
 
-# Vuepress 설치하기
+
+## Vuepress 설치하기
 
 공식 사이트에 나온 매뉴얼을 따라갔다. 
 
@@ -59,6 +61,7 @@ package.json파일을 열고 아래의 스크립트를 저장하고 나온다.
 
 > npm run docs:build
 
+
 → 마크다운 문서를 html로 렌더링한다. 
 
 ```jsx
@@ -66,21 +69,22 @@ $ wait Rendering static HTML...
 $ SUCESS Generated static files in docs/.vuepress/dist.
 ```
 
+
 > npm run docs:dev
 
 → 뷰프레스 프로젝트를 로컬 서버로 돌린다.
 
-[http://localhost:8080/](http://localhost:8080/) 로 이동하면, 마크다운에서 변환된 html문서가 로드된다.
+http://localhost:8080/ 로 이동하면, 마크다운에서 변환된 html문서가 로드된다.
 
 ---
 
-# vuepress를 깃허브 페이지로 설정하기
+## vuepress를 깃허브 페이지로 설정하기
 
-## !!!잘못된 방식!!!
+### !!!잘못된 방식!!!
 
 깃허브 페이지 리파지토리에서 settings → options → github pages 에 들어가서 깃허브 페이지의 루트 폴더를 docs로 설정한다. 브랜치는 master:gh-pages를 생성해서 올리는 것 같은데 일단 master로 올렸다. 
 
-![./Vuepress & 깃허브 페이지[2]/_2020-09-28__7.39.52.png](./Vuepress & 깃허브 페이지[2]/_2020-09-28__7.39.52.png)
+![img](/git/Vuepress & 깃허브 페이지[2]/_2020-09-28__7.39.52.png)
 
 로컬 리포지토리에서 터미널을 열고 
 
@@ -92,7 +96,7 @@ $ git push origin master
 
 리포지토리에 docs폴더가 올라가면 깃 페이지 주소로 찾아가서 확인해본다. 
 
-./docs의 [readme.md](http://readme.md) 파일이 나온다. 그런데 vuepress형식이 아니다. 
+./docs의 readme.md 파일이 나온다. 그런데 vuepress형식이 아니다. 
 
 vuepress에서 빌드한 결과물이 올라간 것이 아니라 마크다운 파일만 인식해서 html로 변환하여 올린 페이지가 로드되었다. 
 
@@ -100,7 +104,7 @@ vuepress에서 빌드한 결과물이 올라간 것이 아니라 마크다운 �
 
 **vuepress를 이용해서 웹 사이트를 생성한 후에 빌드 결과물만 올리는 형식이 되어야 하는데, 웹사이트 만드는 뷰프레스 프로젝트 자체를 올려 버리는 잘못을 했다.** 
 
-## !!! 수정한 방식 !!!
+### !!! 수정한 방식 !!!
 
 github pages설정만 바꾸어 준다.
 
@@ -149,7 +153,7 @@ cd -
 
 그러면 다시 리포지토리의 settings → options → github pages 으로 가서 깃허브 페이지에 로드 되는 것은 **gh-branch** 로 ./root 폴더로 푸시되는 것으로 한정한다는 설정을 해준다.
 
-![./Vuepress & 깃허브 페이지[2]/_2020-09-29__12.07.41.png](./Vuepress & 깃허브 페이지[2]/_2020-09-29__12.07.41.png)
+![img](/git/Vuepress & 깃허브 페이지[2]/_2020-09-29__12.07.41.png)
 
 docs폴더로 가서 터미널에 아래 명령어로 sh을 실행한다. 
 

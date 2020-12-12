@@ -16,7 +16,7 @@ module.exports={
         ],
         sidebar :[
          {path : "/git/", title:"Git", children:['/git/깃허브 페이지 만들기[1]','/git/Vuepress & 깃허브 페이지[2]'], collapsable:true },
-         {path : "/adobe/", title : "ADOBE", childern : ['/adobe/[PS] 선택 툴'], collapsable:true}
+         {path : "/adobe/", title : "ADOBE", childern : ['/adobe/[Ps] 선택 툴'], collapsable:true}
         ]
 }
 }
