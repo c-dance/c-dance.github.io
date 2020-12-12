@@ -17,7 +17,9 @@ module.exports={
         sidebar :[
          {path : "/git/", title:"Git", children:['/git/gitpage1','/git/gitpage2', '/git/gitignore'], collapsable:true },
          {path : "/photoshop/", title:"PHOTOSHOP", children:['/photoshop/Ps-문자','/photoshop/Ps-사진배경', '/photoshop/Ps-색보정','/photoshop/Ps-선택 툴'], collapsable:true},
-         {path : "/illust/", title : "ILLUST", children:[''], collapsable:true}
+         {path : "/illust/", title : "ILLUST", children:[''], collapsable:true},
+         {path : "/note/", title : "NOTE", children:['/note/clonecoding1'], collapsable:true},
+         {path : "/js-web/", title : "JS-web", children:['/js-web/dom'], collapsable:true}
         ]
 }
 }
