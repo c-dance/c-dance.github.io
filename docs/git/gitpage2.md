@@ -84,7 +84,7 @@ http://localhost:8080/ 로 이동하면, 마크다운에서 변환된 html문서
 
 깃허브 페이지 리파지토리에서 settings → options → github pages 에 들어가서 깃허브 페이지의 루트 폴더를 docs로 설정한다. 브랜치는 master:gh-pages를 생성해서 올리는 것 같은데 일단 master로 올렸다. 
 
-![img](/git/Vuepress & 깃허브 페이지[2]/_2020-09-28__7.39.52.png)
+<img src="/git/gitpage2/1.png" width="100%" height="100%"/>
 
 로컬 리포지토리에서 터미널을 열고 
 
@@ -153,7 +153,7 @@ cd -
 
 그러면 다시 리포지토리의 settings → options → github pages 으로 가서 깃허브 페이지에 로드 되는 것은 **gh-branch** 로 ./root 폴더로 푸시되는 것으로 한정한다는 설정을 해준다.
 
-![img](/git/Vuepress & 깃허브 페이지[2]/_2020-09-29__12.07.41.png)
+<img src="/git/gitpage2/2.png" width="100%" height="100%"/>
 
 docs폴더로 가서 터미널에 아래 명령어로 sh을 실행한다. 
 
