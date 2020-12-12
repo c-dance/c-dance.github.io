@@ -16,8 +16,8 @@ module.exports={
         ],
 
         sidebar : [ 
-          {path : "/git/", title:"Git", children:["/git/"], collapsable: true },
-          {path : "/adobe/", title : "ADOBE", childern : ["/acobe/"], collapsable:true}
+          {path : "../git", title:"Git", children:["/"], collapsable: true },
+          {path : "../adobe", title : "ADOBE", childern : ["/"], collapsable:true}
         ]
 }
 };
