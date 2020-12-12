@@ -18,11 +18,11 @@
 
 2.  repository setting 으로 이동 하면 opetions 목록이 뜬다. 밑으로 스크롤하면 , github pages 파트가 있다. 
 
-    <img src="assets/img/git/깃허브 페이지 만들기[1]/_2020-09-26__1.29.02.png" alt="img">
+    <img src="/git/gitpage1/_2020-09-26__1.28.27.png">
 
     아직 활성화가 안 되었다고 뜬다. 어떤 파일도 없기 때문이다. readme.md파일을 올려 주고 다시 온다. 
 
-    ![img](/assets/img/git/깃허브 페이지 만들기[1]/_2020-09-26__1.30.52.png)
+    ![img](/git/gitpage1/_2020-09-26__1.29.02.png)
 
     파일을 올리면 깃허브 페이지가 활성화된다. 
 

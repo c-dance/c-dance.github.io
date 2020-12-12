@@ -9,9 +9,9 @@
 
 ---
 
-## <개체 붙여 넣기>
+## 개체 붙여 넣기
 
-## clone stamp tool
+### clone stamp tool
 
 개체를 레이어의 다른 영역에 복사해 준다. 즉 색상값을 다른 영역에 복사한다. 
 
@@ -21,7 +21,7 @@
 
 (3) 브러시 크기를 조절하면 더 작게 혹은 더 크게 복사할 수 있다. 
 
-## healing brush tool
+### healing brush tool
 
 개체를 레이어의 다른 영역으로 복사하면서 색상과 어울리도록 한다. 즉 주변에 있는 색상값과 조화 하도록 변경한다. 
 
@@ -31,21 +31,21 @@
 
 ---
 
-## <개체 지우기>
+## 개체 지우기
 
-## spot healing brush tool
+### spot healing brush tool
 
 클릭하여 지운다. (크기는 브러시 크기로 조정)
 
 선택 영역을 주변 색상값으로 지워준다. 주로 얼굴의 잡티 지워줄 때 사용한다. 
 
-## red eye tool
+### red eye tool
 
 적목현상을 없애준다. 붉은 부분을 클릭 앤 드래그 하여 영역 선택하면 눈동자를 검은색으로 수정해준다.
 
 원본 레이어 복사 후에 복사본의 적목 위에 적용한다. 
 
-## content-aware fill
+### content-aware fill
 
 이미지의 넓은 영역을 주변의 색상으로 채워준다. 
 
@@ -59,7 +59,7 @@
 
 (2-2) 풀다운 메뉴 edit → content-aware fill
 
-## patch tool
+### patch tool
 
 (주변 색상값과 어울리도록) 지우기 혹은 붙여 넣기
 
