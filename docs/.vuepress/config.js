@@ -16,7 +16,7 @@ module.exports={
         ],
         sidebar : [ 
          {path : "/git/", title:"Git", children:[''], collapsable: false },
-         {path : "/adobe/", title : "ADOBE", childern : ['', '[PS] 선택 툴'], collapsable:false}
+         {path : "/adobe/", title : "ADOBE", childern : ['', '/adobe/[PS] 선택 툴'], collapsable:false}
         ]
 }
 };
