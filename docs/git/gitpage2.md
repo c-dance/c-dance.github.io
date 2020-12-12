@@ -1,4 +1,4 @@
-# 깃허브 페이지 & Vuepress[2] - 설치 및 업로드
+# 깃허브 페이지 & Vuepress[2]
 
 ## Vuepress란?
 
