@@ -21,8 +21,8 @@ module.exports={
          {path : "/html/", title:"HTML", children:[], collapsable:true},
          {path : "/css/", title:"CSS", children:[], collapsable:true},
          {path : "/photoshop/", title:"PHOTOSHOP", children:
-         ['/photoshop/Ps-문자','/photoshop/Ps-사진배경', '/photoshop/Ps-색보정',
-         '/photoshop/Ps-선택 툴', '/photoshop/Ps-레이어','/photoshop/Ps-브러시','/photoshop/Ps-etc'], 
+         ['/photoshop/Ps-레이어','/photoshop/Ps-문자', ,'/photoshop/Ps-브러시','/photoshop/Ps-사진배경', '/photoshop/Ps-색보정',
+         '/photoshop/Ps-선택 툴','/photoshop/Ps-etc'], 
          collapsable:true},
          {path : "/illust/", title : "ILLUST", children:[], collapsable:true},
          {path : "/note/", title : "NOTE", children:['/note/clonecoding1'], collapsable:true}
