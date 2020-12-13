@@ -25,8 +25,7 @@ module.exports={
          '/photoshop/Ps-레이어2','/photoshop/Ps-레이어3','/photoshop/Ps-마스크',
          '/photoshop/Ps-문자', '/photoshop/Ps-브러시','/photoshop/Ps-사진배경', 
          '/photoshop/Ps-색보정','/photoshop/Ps-선택 툴','/photoshop/Ps-이미지보정',
-         '/photoshop/Ps-페인트','/photoshop/Ps-펜툴','/photoshop/Ps-etc'], 
-         collapsable:true},
+         '/photoshop/Ps-페인트','/photoshop/Ps-펜툴','/photoshop/Ps-etc'], collapsable:true},
          {path : "/illust/", title : "ILLUST", children:[], collapsable:true},
          {path : "/note/", title : "NOTE", children:['/note/clonecoding1'], collapsable:true}
         ]
