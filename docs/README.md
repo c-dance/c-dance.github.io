@@ -8,9 +8,9 @@ actionLink: /git/
 features:
 
 - title: gitpage & vuepress
-  깃 페이지와 뷰프레스 기반으로 만든 블로그입니다.
+  details: 깃 페이지와 뷰프레스 기반으로 만든 블로그입니다.
 - title: web-frontend
-  웹 프론트엔드 관련 자료들을 정리하였습니다. 
+  details: 웹 프론트엔드 관련 자료들을 정리하였습니다. 
   footer: MIT Licensed | Copyright © 2018-present Evan You
 
 ---
