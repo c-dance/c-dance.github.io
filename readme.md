@@ -1,5 +1,4 @@
 ---  
-
 home: true
 heroImage: /img/logo2.png
 heroText: c-dance 공부 기록
@@ -13,6 +12,5 @@ features:
 - title: web-frontend
   details: 웹 프론트엔드 관련 자료들을 정리하였습니다. 
   footer: MIT Licensed | Copyright © 2018-present Evan You
-
 ---  
 
