@@ -15,7 +15,7 @@ module.exports={
           { text: 'About', link: '/About/' },
         ],
         sidebar :[
-         {path : "/gitpage/", title:"Github Page", children:['/git/gitpage1','/git/gitpage2'], collapsable:true },
+         {path : "/gitpage/", title:"Github Page", children:['/gitpage/gitpage1','/gitpage/gitpage2'], collapsable:true },
          {path : "/git/", title:"GIT", children:["/git/gitignore"], collapsable:true},
          {path : "/js-grammar/", title:"JS-grammar", children:[], collapsable:true},
          {path : "/js-web/", title : "JS-web", children:['/js-web/dom'], collapsable:true},
