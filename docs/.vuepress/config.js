@@ -22,7 +22,9 @@ module.exports={
          {path : "/html/", title:"HTML", children:[], collapsable:true},
          {path : "/css/", title:"CSS", children:[], collapsable:true},
          {path : "/photoshop/", title:"PHOTOSHOP", children:['/photoshop/0선택툴'
-          ,'/photoshop/1레이어','/photoshop/2레이어스타일','/photoshop/3레이어변형']
+          ,'/photoshop/1레이어','/photoshop/2레이어스타일','/photoshop/3레이어변형'
+          ,'/photoshop/4마스크', '/photoshop/5사진배경', '/photoshop/6페인트'
+          ,'/photoshop/7펜툴', '/photoshop/8브러시', '/photoshop/9문자']
           , collapsable:true},
          {path : "/illust/", title : "ILLUST", children:[], collapsable:true},
          {path : "/note/", title : "NOTE", children:['/note/clonecoding1'], collapsable:true}
