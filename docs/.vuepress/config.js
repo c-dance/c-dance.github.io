@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 
 module.exports={
-    title : "c-dance 공부 블로그",
+    title : "c-dance 공부기록",
 
     themeConfig: {
         logo : "/img/logo2.png", //default : public
