@@ -1,7 +1,7 @@
 
 # 공부 기록 블로그  
 
-<center><img src="/img/logo2.png" width = 25%  height=25%></center>
+<center><img src="/img/logo2.png" width = 80%  height=80%></center>
 
 
 __웹 프론트엔드 관련 공부를 기록하는 블로그입니다.__
