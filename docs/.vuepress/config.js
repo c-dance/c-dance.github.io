@@ -21,6 +21,8 @@ module.exports={
          {path : "/js-web/", title : "JS-web", children:['/js-web/dom'], collapsable:true},
          {path : "/html/", title:"HTML", children:[], collapsable:true},
          {path : "/css/", title:"CSS", children:[], collapsable:true},
+         {path : "/photoshop/", title:"PHOTOSHOP", children:['/photoshop/0선택툴']
+          , collapsable:true},
          {path : "/illust/", title : "ILLUST", children:[], collapsable:true},
          {path : "/note/", title : "NOTE", children:['/note/clonecoding1'], collapsable:true}
         ]
