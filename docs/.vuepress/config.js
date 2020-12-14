@@ -22,12 +22,12 @@ module.exports={
          {path : "/js-web/", title : "JS-web", children:['/js-web/dom'], collapsable:true},
          {path : "/html/", title:"HTML", children:[], collapsable:true},
          {path : "/css/", title:"CSS", children:[], collapsable:true},
-         {path : "/photoshop/", title:"PHOTOSHOP", children:['/photoshop/00선택툴'
-          ,'/photoshop/01레이어','/photoshop/02레이어스타일','/photoshop/03레이어변형'
-          ,'/photoshop/04마스크', '/photoshop/05사진배경', '/photoshop/06페인트'
-          ,'/photoshop/07펜툴', '/photoshop/08브러시', '/photoshop/09문자'
-          ,'/photoshop/10색보정', '/photoshop/11이미지보정', '/photoshop/12쉐이프툴'
-          ,'/photoshop/13기타']
+         {path : "/photoshop/", title:"PHOTOSHOP", children:['/photoshop/a선택툴'
+          ,'/photoshop/b레이어','/photoshop/c레이어스타일','/photoshop/d레이어변형'
+          ,'/photoshop/e마스크', '/photoshop/f사진배경', '/photoshop/g페인트'
+          ,'/photoshop/h펜툴', '/photoshop/i브러시', '/photoshop/j문자'
+          ,'/photoshop/k색보정', '/photoshop/l이미지보정', '/photoshop/m쉐이프툴'
+          ,'/photoshop/n기타']
           , collapsable:true},
          {path : "/illust/", title : "ILLUST", children:[], collapsable:true},
          {path : "/note/", title : "NOTE", children:['/note/clonecoding1'], collapsable:true}
