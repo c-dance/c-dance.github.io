@@ -15,7 +15,8 @@ module.exports={
           { text: 'About', link: '/About/' },
         ],
         sidebar :[
-         {path : "/gitpage/", title:"Github Page", children:['/gitpage/gitpage1','/gitpage/gitpage2'], collapsable:true },
+         {path : "/gitpage/", title:"Github Page", children:['/gitpage/gitpage1'
+         ,'/gitpage/gitpage2', '/gitpage/gitpage3'], collapsable:true },
          {path : "/git/", title:"GIT", children:["/git/gitignore"], collapsable:true},
          {path : "/js-grammar/", title:"JS-grammar", children:[], collapsable:true},
          {path : "/js-web/", title : "JS-web", children:['/js-web/dom'], collapsable:true},
@@ -25,7 +26,8 @@ module.exports={
           ,'/photoshop/1레이어','/photoshop/2레이어스타일','/photoshop/3레이어변형'
           ,'/photoshop/4마스크', '/photoshop/5사진배경', '/photoshop/6페인트'
           ,'/photoshop/7펜툴', '/photoshop/8브러시', '/photoshop/9문자'
-          ,'/photoshop/10색보정', '/photoshop/11이미지보정', '/photoshop/12기타']
+          ,'/photoshop/10색보정', '/photoshop/11이미지보정', '/photoshop/12쉐이프툴'
+          ,'/photoshop/13기타']
           , collapsable:true},
          {path : "/illust/", title : "ILLUST", children:[], collapsable:true},
          {path : "/note/", title : "NOTE", children:['/note/clonecoding1'], collapsable:true}

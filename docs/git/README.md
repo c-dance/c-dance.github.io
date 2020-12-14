@@ -1,3 +1,1 @@
-- git
-- git page
-- vue press
+깃, 깃허브 관련 공부 기록
