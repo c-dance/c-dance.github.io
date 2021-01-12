@@ -15,7 +15,7 @@
 
 ### 사이트
 
-[꿈날개 | 쉽게 배우는 JavaScript & JQurey](https://www.dream.go.kr/dream/vocationalTraining/learningCenterDetail.do?menuSeq=10607&menuFlag=on&courseSeq=3798)
+- [꿈날개 | 쉽게 배우는 JavaScript & JQurey](https://www.dream.go.kr/dream/vocationalTraining/learningCenterDetail.do?menuSeq=10607&menuFlag=on&courseSeq=3798)
 
-[TCP school | 제이쿼리](http://www.tcpschool.com/jquery/jq_basic_syntax)
+- [TCP school | 제이쿼리](http://www.tcpschool.com/jquery/jq_basic_syntax)
 

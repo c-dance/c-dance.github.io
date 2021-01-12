@@ -19,7 +19,8 @@ module.exports={
          ,'/gitpage/gitpage2', '/gitpage/gitpage3'], collapsable:true },
          {path : "/git/", title:"GIT", children:["/git/gitignore"], collapsable:true},
          {path : "/js-grammar/", title:"JS-grammar", children:[], collapsable:true},
-         {path : "/js-web/", title : "JS-web", children:['/js-web/dom'], collapsable:true},
+         {path : "/js-web/", title : "JS-web", children:['/js-web/a0-dom'
+         ,'/js-web/j0-jquery','/js-web/j1-ajax'], collapsable:true},
          {path : "/html/", title:"HTML", children:['/html/a0-layout','/html/a2-block'
          ,'/html/a3-list','/html/a4-input']
          , collapsable:true},
