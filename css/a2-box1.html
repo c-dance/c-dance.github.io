@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>[CSS] 박스 모델(1) | c-dance 공부기록</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.a833e332.css" as="style"><link rel="preload" href="/assets/js/app.fa5b72a7.js" as="script"><link rel="preload" href="/assets/js/2.101f83a4.js" as="script"><link rel="preload" href="/assets/js/13.75c12e4f.js" as="script"><link rel="prefetch" href="/assets/js/10.389a52e7.js"><link rel="prefetch" href="/assets/js/11.97eb5d05.js"><link rel="prefetch" href="/assets/js/12.92155518.js"><link rel="prefetch" href="/assets/js/14.731ce938.js"><link rel="prefetch" href="/assets/js/15.84a1e45c.js"><link rel="prefetch" href="/assets/js/16.bad656b8.js"><link rel="prefetch" href="/assets/js/17.61af69d3.js"><link rel="prefetch" href="/assets/js/18.e6302ea8.js"><link rel="prefetch" href="/assets/js/19.e26787b8.js"><link rel="prefetch" href="/assets/js/20.13834f06.js"><link rel="prefetch" href="/assets/js/21.4b77bfc4.js"><link rel="prefetch" href="/assets/js/22.fcad5044.js"><link rel="prefetch" href="/assets/js/23.e1b2718f.js"><link rel="prefetch" href="/assets/js/24.a10ee987.js"><link rel="prefetch" href="/assets/js/25.f377c229.js"><link rel="prefetch" href="/assets/js/26.51aba71a.js"><link rel="prefetch" href="/assets/js/27.8c57e1a8.js"><link rel="prefetch" href="/assets/js/28.74a01640.js"><link rel="prefetch" href="/assets/js/29.3c3880d9.js"><link rel="prefetch" href="/assets/js/3.baa53008.js"><link rel="prefetch" href="/assets/js/30.2114cc32.js"><link rel="prefetch" href="/assets/js/31.1d67a8b4.js"><link rel="prefetch" href="/assets/js/32.0e909ed5.js"><link rel="prefetch" href="/assets/js/33.8dfafca0.js"><link rel="prefetch" href="/assets/js/34.58f0f360.js"><link rel="prefetch" href="/assets/js/35.1abc65ff.js"><link rel="prefetch" href="/assets/js/36.9c3b340d.js"><link rel="prefetch" href="/assets/js/37.30d0f9bd.js"><link rel="prefetch" href="/assets/js/38.c0804ec8.js"><link rel="prefetch" href="/assets/js/39.59d3fa27.js"><link rel="prefetch" href="/assets/js/4.d37862ef.js"><link rel="prefetch" href="/assets/js/40.44ffcc34.js"><link rel="prefetch" href="/assets/js/41.63669960.js"><link rel="prefetch" href="/assets/js/42.804a90e1.js"><link rel="prefetch" href="/assets/js/43.85b61fbf.js"><link rel="prefetch" href="/assets/js/44.b613ce15.js"><link rel="prefetch" href="/assets/js/45.99beb509.js"><link rel="prefetch" href="/assets/js/46.f234f0fd.js"><link rel="prefetch" href="/assets/js/47.9170a899.js"><link rel="prefetch" href="/assets/js/48.d51f3699.js"><link rel="prefetch" href="/assets/js/49.bd820d8c.js"><link rel="prefetch" href="/assets/js/5.1cfadda0.js"><link rel="prefetch" href="/assets/js/50.49314dac.js"><link rel="prefetch" href="/assets/js/51.929bb2ac.js"><link rel="prefetch" href="/assets/js/52.f1b41142.js"><link rel="prefetch" href="/assets/js/53.690fd902.js"><link rel="prefetch" href="/assets/js/54.6bec767e.js"><link rel="prefetch" href="/assets/js/55.1a27889b.js"><link rel="prefetch" href="/assets/js/56.098cc46c.js"><link rel="prefetch" href="/assets/js/57.6167fcd0.js"><link rel="prefetch" href="/assets/js/58.a5d94169.js"><link rel="prefetch" href="/assets/js/59.152f6f77.js"><link rel="prefetch" href="/assets/js/6.73c063ed.js"><link rel="prefetch" href="/assets/js/60.6947d757.js"><link rel="prefetch" href="/assets/js/61.1946282a.js"><link rel="prefetch" href="/assets/js/62.0fd527b0.js"><link rel="prefetch" href="/assets/js/63.b524c39e.js"><link rel="prefetch" href="/assets/js/64.adc9affc.js"><link rel="prefetch" href="/assets/js/65.8fbe1e85.js"><link rel="prefetch" href="/assets/js/66.18724be3.js"><link rel="prefetch" href="/assets/js/67.a77c28d3.js"><link rel="prefetch" href="/assets/js/68.89a10091.js"><link rel="prefetch" href="/assets/js/69.d8930d8f.js"><link rel="prefetch" href="/assets/js/7.9260cc82.js"><link rel="prefetch" href="/assets/js/70.265af68a.js"><link rel="prefetch" href="/assets/js/71.380267e9.js"><link rel="prefetch" href="/assets/js/72.c3aa7959.js"><link rel="prefetch" href="/assets/js/73.61948707.js"><link rel="prefetch" href="/assets/js/74.eb9b3fbf.js"><link rel="prefetch" href="/assets/js/75.ca3a39e5.js"><link rel="prefetch" href="/assets/js/76.51fdb75d.js"><link rel="prefetch" href="/assets/js/77.0704c46a.js"><link rel="prefetch" href="/assets/js/78.0a825681.js"><link rel="prefetch" href="/assets/js/79.23b7fb8a.js"><link rel="prefetch" href="/assets/js/8.3ecc3c13.js"><link rel="prefetch" href="/assets/js/80.e08e2a8d.js"><link rel="prefetch" href="/assets/js/81.a0dd9335.js"><link rel="prefetch" href="/assets/js/82.3a9db041.js"><link rel="prefetch" href="/assets/js/83.808830ee.js"><link rel="prefetch" href="/assets/js/9.144d41b6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a833e332.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo2.png" alt="c-dance 공부기록" class="logo"> <span class="site-name can-hide">c-dance 공부기록</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/About/" class="nav-link">
+  About
+</a></div> <a href="https://github.com/c-dance" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/About/" class="nav-link">
+  About
+</a></div> <a href="https://github.com/c-dance" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/gitpage/" class="sidebar-heading clickable"><span>Github Page</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/git/" class="sidebar-heading clickable"><span>GIT</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/js-grammar/" class="sidebar-link">JS-grammar</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/js-web/" class="sidebar-heading clickable"><span>JS-web</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/html/" class="sidebar-heading clickable"><span>HTML</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/css/" class="sidebar-heading clickable router-link-active open"><span>CSS</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/css/a0-concept.html" class="sidebar-link">[CSS] 기본 개념</a></li><li><a href="/css/a1-layout.html" class="sidebar-link">[CSS] 레이아웃</a></li><li><a href="/css/a2-box1.html" aria-current="page" class="active sidebar-link">[CSS] 박스 모델(1)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css/a2-box1.html#박스-구성" class="sidebar-link">박스 구성</a></li><li class="sidebar-sub-header"><a href="/css/a2-box1.html#margin" class="sidebar-link">margin</a></li><li class="sidebar-sub-header"><a href="/css/a2-box1.html#마진-겹침" class="sidebar-link">마진 겹침</a></li><li class="sidebar-sub-header"><a href="/css/a2-box1.html#border" class="sidebar-link">border</a></li><li class="sidebar-sub-header"><a href="/css/a2-box1.html#padding" class="sidebar-link">padding</a></li><li class="sidebar-sub-header"><a href="/css/a2-box1.html#box-sizing" class="sidebar-link">box-sizing</a></li><li class="sidebar-sub-header"><a href="/css/a2-box1.html#박스-사이즈" class="sidebar-link">박스 사이즈</a></li><li class="sidebar-sub-header"><a href="/css/a2-box1.html#정렬" class="sidebar-link">정렬</a></li></ul></li><li><a href="/css/c0-color.html" class="sidebar-link">[CSS] 색상</a></li><li><a href="/css/t0-font.html" class="sidebar-link">문자</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/publish/" class="sidebar-heading clickable"><span>WEB-PUBLISH</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/photoshop/" class="sidebar-heading clickable"><span>PHOTOSHOP</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/illust/" class="sidebar-heading clickable"><span>ILLUST</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/note/" class="sidebar-heading clickable"><span>NOTE</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css-박스-모델-1"><a href="#css-박스-모델-1" class="header-anchor">#</a> [CSS] 박스 모델(1)</h1> <p>웹 문서는 여러 개의 박스 모델이 모여 구성한다. 이 박스 안에는 { 마진, 패딩, 테두리}의 여러 겹의 박스가 겹쳐져 있다. css를 작성할 때에도 컨텐츠(텍스트, 이미지)의 스타일 방법으로 박스 모델을 사용한다.</p> <p>박스 모델의 쌓는 방식(나열/배치)은 박스가 블록 레벨 요소인지, 인라인 레벨 요소인지에 따라 달라진다.</p> <h2 id="박스-구성"><a href="#박스-구성" class="header-anchor">#</a> 박스 구성</h2> <ul><li>컨텐츠는 컨텐츠 영역을 가리킨다. Text, img 등의 영역이다.</li> <li>__테두리와 컨텐츠 사이의 여백__인 padding이 있다. 박스 내부에 위치하며, 컨텐츠를 감싸는 영역이다.</li> <li>컨텐츠는 테두리(border)를 갖는다. 패딩과 컨텐츠를 둘러싼다.</li> <li>각 <strong>박스 모델의 간격을 조절하기 위해</strong> 박스 모델이 외부(다른 박스 모델)에 대해 갖는 여백, margin이 테두리를 감싼다.</li> <li>각 영역은 top, bottom, right, left를 갖는다.</li></ul> <div class="language-txt extra-class"><pre class="language-text"><code>|----------------------------------------------|
+|       margin                                 |
+|    |-------------------------------------|   |
+|    |        border                       |   |
+|    |    |----------------------------|   |   |
+|    |    |       padding              |   |   |
+|    |    |    |------------------|    |   |   |
+|    |    |    |     contents     |    |   |   |
+|    |    |    |------------------|    |   |   |
+|    |    |----------------------------|   |   |
+|    |-------------------------------------|   |  
+|                                              |
+|----------------------------------------------|
+</code></pre></div><h2 id="margin"><a href="#margin" class="header-anchor">#</a> margin</h2> <p><strong>박스 모델 간의 간격을 설정할 때 사용한다.</strong></p> <p>마진은 현재 요소의 주변 여백이다. 마진을 사용하면 해당 요소의 외부 여백 크기, 즉 요소 간의 간격을 조절하고 정렬할 수 있다.</p> <p><strong>블록 모델 요소는 처음에 100%의 너비를 갖기 때문에 마진을 주어야 요소 간 정렬할 수 있다.</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">margin-top</span> <span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+	<span class="token property">margin-bottom</span> <span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">margin</span> <span class="token punctuation">:</span> 10px 5px 10px 5px<span class="token punctuation">;</span> <span class="token comment">/*top-right-bottom-left*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box p</span><span class="token punctuation">{</span>
+	<span class="token property">margin</span> <span class="token punctuation">:</span> 0.2% 0.1%<span class="token punctuation">;</span> <span class="token comment">/*top,botton : 10px &amp; right,left : 5px*/</span>	
+<span class="token punctuation">}</span>
+
+<span class="token selector">p</span><span class="token punctuation">{</span>
+	<span class="token property">margin</span> <span class="token punctuation">:</span> 10px 5px 20px<span class="token punctuation">;</span> <span class="token comment">/*top:10px &amp; right,left:5px &amp; bottom:10px*/</span> 
+<span class="token punctuation">}</span>
+
+<span class="token selector">div</span><span class="token punctuation">{</span>
+	<span class="token property">margin</span> <span class="token punctuation">:</span> auto<span class="token punctuation">;</span> 
+	<span class="token comment">/*display 속성에서 지정한 값에 맞게 적절하게 자동 설정*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">div</span><span class="token punctuation">{</span>
+	<span class="token property">margin</span> <span class="token punctuation">:</span> 0.1% auto<span class="token punctuation">;</span> 
+	<span class="token comment">/*요소의 너비를 뺀 나머지 공간의 좌우마진도 자동으로 맞워준다 -&gt; 중앙정렬*/</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="마진-겹침"><a href="#마진-겹침" class="header-anchor">#</a> 마진 겹침</h2> <p>마진 상쇄, Margin collapsing 을 이른다. 요소 간의 마진이 겹쳐서 한 쪽 요소의 마진이 상쇄된다.</p> <ol><li><p>서로 다른 박스 모델의 인접한 마진 겹침(상쇄)</p> <p>인접한 마진이 있을 때(인접한 두 개의 박스 모델), 두 값이 동일한 경우 상쇄되어 중복값의 마진 하나만 표현된다. 만약 두 값이 다른 경우 더 큰 값의 마진 하나만 표현된다.</p></li> <li><p>컨텐츠가 없어 height=0인 태그의 상하 마진 겹침(상쇄)</p> <p>어떤 블록 모델의 컨텐츠가 없을 경우(시각적 표현이 없을 경우) 상하 마진은 인접하게 되며, 마진 상쇄가 되어 두 마진의 중복값(상하 마진값이 동일할 때) 혹은 더 큰 값의 마진 하나만 남는다.</p></li> <li><p>부모 박스 모델과 자식 박스 모델의 인접한 마진 겹침(상쇄)</p> <p>부모 박스 모델의 컨텐츠가 없을 때, 부모 박스 모델의 마진과 자식 박스 모델의 마진이 상쇄된다. 중복값이나 더 큰 값이 마진값이 된다.</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">#parent</span><span class="token punctuation">{</span>
+	<span class="token property">margin-top</span> <span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#child</span><span class="token punctuation">{</span>
+	<span class="token property">margin-top</span> <span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*부모 박스 모델의 컨텐츠가 없으면 상쇄되어 남은 마진값은 100px*/</span>
+</code></pre></div><p>참고 : <a href="https://velog.io/@raram2/CSS-%EB%A7%88%EC%A7%84-%EC%83%81%EC%87%84Margin-collapsing-%EC%9B%90%EB%A6%AC-%EC%99%84%EB%B2%BD-%EC%9D%B4%ED%95%B4" target="_blank" rel="noopener noreferrer">velog.io/@raram2 | CSS 마진 상쇄(Margin-collapsing) 원리 완벽 이해<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li></ol> <h2 id="border"><a href="#border" class="header-anchor">#</a> border</h2> <p>컨텐츠의 테두리 속성</p> <ul><li><p>Border-width</p> <p><strong>컨텐츠 테두리 두께를 지정하는 속성</strong></p> <p>테두리 두께가 지정되어야  border-style을 설정했을 때 지정한 두께만큼 테두리가 보인다.</p> <p>테두리 두께는 시계방향으로 상-우-하-좌 를 각각 다르게 설정할 수 있다.</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border-top-width</span> <span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+	<span class="token property">border-right-width</span> <span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+	<span class="token property">border-bottom-width</span> <span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+	<span class="token property">border-left-width</span> <span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+	<span class="token property">border-width</span> <span class="token punctuation">:</span> thin<span class="token punctuation">;</span> <span class="token comment">/* thin &lt; medium &lt; thick */</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+ <span class="token property">border-width</span> <span class="token punctuation">:</span> thin medium<span class="token punctuation">;</span> <span class="token comment">/*top,bottom : thin &amp; left,right : medium*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border-width</span> <span class="token punctuation">:</span> 1px 2px 1px 2px<span class="token punctuation">;</span> <span class="token comment">/*top-right-bottom-left*/</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>Border-style</p> <p>테두리 선 스타일을 지정하는 속성</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+	<span class="token property">border-width</span> <span class="token punctuation">:</span> 2px<span class="token punctuation">;</span>
+	<span class="token property">border-style</span> <span class="token punctuation">:</span> double<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">/*
+none : 테두리 보이지 없음 - 기본값
+hidden : 테두리 보이지 않음(border-collapse : collapse; 이면 다른 테두리도 안 보임)
+solid : 실선
+dashed : 짧은 직선으로 연결된 선
+dotted : 점선
+double : 이중선/ 두 선의 간격은 border-width로 설정
+groove : 테두리를 음각한 것처럼 보이게 함
+insert : 테두리가 박혀있는 것 처럼 보임(boarder-collapse : sepereate;)
+					groove와 같이 보임(boarder-collapse : collapse;)
+ridge : 테두리가 튀어나온 것 처럼 보이게 함
+outset : 테두리가 양각한 것처럼 보임(boarder-collapse : seperate;)
+					ridge와 같이 보임(boarder-collapse : collapse;)
+*/</span>
+</code></pre></div></li> <li><p>Border-color</p> <p>테두리 색상을 지정하는 속성</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border-top-color</span> <span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+	<span class="token property">border-right-color</span> <span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+	<span class="token property">border-bottom-color</span> <span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+	<span class="token property">border-left-color</span> <span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border-color</span> <span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>Border-radius</p> <p>테두리 모퉁이를 둥글게 만드는 속성.</p> <p>모퉁이에 원을 붙이다고 생각하고 모퉁이 방향와 원의 반지름을 지정한다.</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border-top-left-radius</span> <span class="token punctuation">:</span> 30px<span class="token punctuation">;</span> <span class="token comment">/*박스 상단 좌측 모서리 설정*/</span>
+	<span class="token property">border-bottom-right-radius</span> <span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border-radius</span> <span class="token punctuation">:</span> 10%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border-radius</span> <span class="token punctuation">:</span> 30px<span class="token punctuation">;</span> 30px<span class="token punctuation">;</span> 10px<span class="token punctuation">;</span> 10px<span class="token punctuation">;</span> <span class="token comment">/*상좌-상우-하우-하좌*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/*모서리를 타원형태로 라운딩하기*/</span>
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border-top-left-radius</span> <span class="token punctuation">:</span>  50px 30px<span class="token punctuation">;</span> <span class="token comment">/*수평 반지름 50px, 수직 반지름 30px*/</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>border</p> <p>속성(두께, 색상, 스타일)을 하나로 묶어서 지정할 수 있다.</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border-top</span> <span class="token punctuation">:</span> 2px blue dotted<span class="token punctuation">;</span> <span class="token comment">/*속성 순서는 상관 없다*/</span>
+	<span class="token property">border-bottom</span> <span class="token punctuation">:</span> 2px black dotted<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> 
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token property">border</span> <span class="token punctuation">:</span> 2px blue solid<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ul> <h2 id="padding"><a href="#padding" class="header-anchor">#</a> padding</h2> <p>패딩은 컨텐츠와 테두리border 사이의 여백 공간이다. (마진은 border 바깥, 패딩은 border안 쪽의 여백이다).</p> <p>패딩의 속성 사용법은 마진의 속성 사용법과 같다.</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span><span class="token punctuation">{</span>
+	<span class="token property">padding-top</span> <span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+	<span class="token property">padding-right</span> <span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">div</span><span class="token punctuation">{</span>
+	<span class="token property">padding</span> <span class="token punctuation">:</span> 10px 15px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">div</span><span class="token punctuation">{</span>
+	<span class="token property">padding</span> <span class="token punctuation">:</span> 10px 5px 15px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">div</span><span class="token punctuation">{</span>
+	<span class="token property">padding</span> <span class="token punctuation">:</span> 10px 20px 10 px 20px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="box-sizing"><a href="#box-sizing" class="header-anchor">#</a> box-sizing</h2> <p>box-sizing 속성은 컨텐츠 너비와 높이로 설정했던 width, height를 컨텐츠에 대한 사이즈로 제한할 것인지 패딩/테두리를 포함한 사이즈로 취급할 것인지 설정하게 해 준다.</p> <p>참고 : <a href="https://developer.mozilla.org/ko/docs/Web/CSS/box-sizing" target="_blank" rel="noopener noreferrer">MDN | box-sizing<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>박스 모델의 width, height 속성은 컨텐츠의 너비와 높이 속성이다. 박스 모델 전체의 너비와 속성은 &lt;컨텐츠&gt; 뿐만 아니라 &lt;패딩&gt;과 &lt;테두리&gt;를 포함해야 한다. (마진은 모델간 간격을 설정하는 속성이다)</p> <p>때문에 width, height을 정의하고, padding, border 값을 주면 padding, border 는 width, height 값 내에서 조정되는 것이 아니라 플러스된다.</p> <p>margin은 박스 간 간격 조정을 위해 있으므로 이를 제외하고, 컨텐츠 영역의 너비와 높이를 설정함에 있어 padding과 border를 포함하기 위해서는 box-sizing속성을 이용하면 된다.</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">*</span> <span class="token punctuation">{</span>
+	<span class="token property">box-sizing</span> <span class="token punctuation">:</span> border-box<span class="token punctuation">;</span> <span class="token comment">/*처음부터 모든 요소의 사이즈가 border-box로 처리될 수 있도록 처리*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.content-box</span> <span class="token punctuation">{</span>
+  <span class="token property">box-sizing</span> <span class="token punctuation">:</span> content-box<span class="token punctuation">;</span> <span class="token comment">/*기본값 : width, height은 컨텐츠 영역만 가리킴*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token comment">/*크기 = 테두리+패딩+컨텐츠 영역*/</span>
+	<span class="token property">box-sizing</span> <span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+	<span class="token property">width</span> <span class="token punctuation">:</span> 200px<span class="token punctuation">;</span> <span class="token comment">/*컨텐츠 영역 = width-(border+padding) = 170px*/</span>
+	<span class="token property">height</span> <span class="token punctuation">:</span> 300px<span class="token punctuation">;</span> <span class="token comment">/*컨텐츠 영역 = width-(border+padding) = 270px*/</span>
+	<span class="token property">margin</span> <span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+	<span class="token property">padding</span> <span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+	<span class="token property">border</span> <span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span><span class="token punctuation">{</span>
+	<span class="token comment">/*크기 = 컨텐츠 영역 : 기본값*/</span>
+	<span class="token property">box-sizing</span> <span class="token punctuation">:</span> content-box<span class="token punctuation">;</span>
+	<span class="token property">width</span> <span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+	<span class="token property">height</span> <span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+	<span class="token property">margin</span> <span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+	<span class="token property">padding</span> <span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+	<span class="token property">border</span> <span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="박스-사이즈"><a href="#박스-사이즈" class="header-anchor">#</a> 박스 사이즈</h2> <p>박스 사이즈는 절대값(px)을 줄 수도 있고, 부모 박스를 기준으로 상대값(%)으로 설정할 수도 있다.</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.container</span> <span class="token punctuation">{</span>
+		<span class="token property">width</span> <span class="token punctuation">:</span> 960px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.container .title</span> <span class="token punctuation">{</span>
+	<span class="token property">width</span> <span class="token punctuation">:</span> 20%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="정렬"><a href="#정렬" class="header-anchor">#</a> 정렬</h2> <p>박스 모델을 정렬하는 여러가지 방법이 있다. 박스의 외부 여백 속성을 사용 할 수도, css의 정렬 속성을 사용할 수도 있다.</p> <h3 id="margin으로-중앙-정렬"><a href="#margin으로-중앙-정렬" class="header-anchor">#</a> margin으로 중앙 정렬</h3> <p>박스 모델을 중앙 정렬하기 위해서는 박스 외부 여백을 조정하는 margin 속성을 사용하면 된다. margin값을 auto로 줄 경우 윈도우 크기에 변화가 생겨도 입력값대로 정렬한다.</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.container</span> <span class="token punctuation">{</span>
+	<span class="token property">width</span> <span class="token punctuation">:</span> 1140px<span class="token punctuation">;</span> 
+	<span class="token property">margin-right</span> <span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+	<span class="token property">margin-left</span> <span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+  <span class="token comment">/*margin : 0 auto;*/</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="float으로-좌우정렬"><a href="#float으로-좌우정렬" class="header-anchor">#</a> float으로 좌우정렬</h3> <p>박스모델(블럭 요소)의 Float 속성에 right, left값을 주어 좌우정렬을 할 수 있다. clearfix가 동반되어야 한다.</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.side-box</span> <span class="token punctuation">{</span>
+	<span class="token property">float</span> <span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">img.left-side</span><span class="token punctuation">{</span>
+	<span class="token property">float</span> <span class="token punctuation">:</span> left<span class="token punctuation">;</span> 
+	<span class="token property">margin-right</span> <span class="token punctuation">:</span> 10px<span class="token punctuation">;</span> <span class="token comment">/*우측에 텍스트가 놓이면 오른쪽 여백도 띄워줘야 한다.*/</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="clearfix"><a href="#clearfix" class="header-anchor">#</a> clearfix</h3> <p><strong>float속성을 clear하는 방법</strong> 이다.</p> <p>만약 부모 박스(요소) 하위에 위치한 상태에서 float속성을 사용하면, 이후 부모 박스와 자식 박스 간의 연결은 단절되고 각개의 박스가 된다. float속성을 가진 박스 다음에 오는 박스도 그대로 float속성을 물려 받는다.</p> <p>때문에 float의 영향을 해당 박스로 제한하고, 다음에 오는 박스는 여전히 부모 박스의 속성을 이어 받도록 하기 위한 방법으로 clearfix가 제안되었다.</p> <p>예 1 : clear 속성을 직접 사용</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">p</span><span class="token punctuation">{</span>
+	<span class="token property">clear</span> <span class="token punctuation">:</span> left<span class="token punctuation">;</span> <span class="token comment">/*이전에 float:left; 으로 설정되면 clear도 동일한 방향으로 해제*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">p</span><span class="token punctuation">{</span>
+	<span class="token property">cleat</span> <span class="token punctuation">:</span> both<span class="token punctuation">;</span> <span class="token comment">/*좌우 상관 없이 모두 기본으로 초기화*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.clearfix</span> <span class="token punctuation">{</span>*<span class="token property">zoom</span><span class="token punctuation">:</span>1<span class="token punctuation">;</span><span class="token punctuation">}</span> <span class="token comment">/*IE8에서 ::after적용 안되는 문제 보완*/</span>
+<span class="token selector">.clearfix::after</span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span>block<span class="token punctuation">;</span>
+  <span class="token property">clear</span><span class="token punctuation">:</span>both<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span><span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>참고 :</p> <p><a href="https://takeuu.tistory.com/60" target="_blank" rel="noopener noreferrer">워너비 스페셜 | CSS / float를 clear하는 방법 네가지(clearfix)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://ofcourse.kr/css-course/clear-%EC%86%8D%EC%84%B1" target="_blank" rel="noopener noreferrer">ofcourse.kr | css<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/12/2021, 9:29:27 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/css/a1-layout.html" class="prev">
+        [CSS] 레이아웃
+      </a></span> <span class="next"><a href="/css/c0-color.html">
+        [CSS] 색상
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.fa5b72a7.js" defer></script><script src="/assets/js/2.101f83a4.js" defer></script><script src="/assets/js/13.75c12e4f.js" defer></script>
+  </body>
+</html>
