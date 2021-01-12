@@ -33,7 +33,7 @@ module.exports={
           ,'/photoshop/n-filter','/photoshop/x-GTQ','/photoshop/z-etc']
           , collapsable:true},
          {path : "/illust/", title : "ILLUST", children:['/illust/a-setting'
-          ,'/illust/b-shape','/illust/c-allign','/illust/d-pen','/illust/e-pathfinder'
+          ,'/illust/b-shape','/illust/c-align','/illust/d-pen','/illust/e-pathfinder'
           ,'/illust/f-type','/illust/g-photo','/illust/h-pathObj'
           ,'/illust/i-brush','/illust/j-blend','/illust/k-pattern'
           ,'/illust/l-effect','/illust/m-gtq','/illust/z-etc']
