@@ -2,18 +2,6 @@
 
 
 
-## Photomerge
-
-1. 이어 붙일 사진 파일 여러개 오픈
-2. 풀다운 메뉴 :  파일(file) → 자동화(automate) → photomerge → add open file
-3. 비어있는 윤곽 정리 
-
-    (1) 선택툴 : 크롭 → 잘라내기
-
-    (2) cmd + t →  사진 확대
-
-4. 레이어 합치기(layer-merge) : 레이어 패널에서 합칠 레이어 선택 + (cmd + e)
-
 ## puppet wrap
 
 동물의 자세를 변형할 수 있다.
@@ -28,11 +16,29 @@
 
 (5) 동물 뿐만 아니라 주변 형상에도 포인트를 주어야 할 수 있다(동물 움직임에 따라 배경도 함께 변형될 수 있기 때문)
 
+
+
 ## 구획 칠하기
 
 1. marquee tool 로 구역 선택
 2. 구역 칠하기 : cmd + fn + f5
 3. 구역 윤곽 스트로크 : 풀다운 메뉴 편집(edit) → 획(stroke)
+
+
+
+## guide line
+
+레이어의 특정 부분에 가이드 라인을 줄 때 사용한다. 이미지에 이미지 틀을 만들 때, 가이드 라인을 지정한 후 쉐이프 툴로 rounded rectangle을 그리면 가이드 라인이 자동으로 줄을 잡아준다. (View -> snap이 체크된 상태여야 한다)
+
+- 레이어 창에 ruler 그리기 : cmd + r 
+- 풀다운 메뉴 view -> new guide -> horizontal. vertical 지정.
+- 가이드 라인 없앨 때 : 풀다운 메뉴 view -> new guide 
+
+
+
+### oil paint
+
+풀다운 메뉴 filter -> styles -> oil paint
 
 
 

@@ -7,6 +7,24 @@
 
 배경을 늘리고 개체를 중앙으로 옮겨주어 비율 문제 없이 자연스럽게 보이도록 한다. 
 
+
+
+## Photomerge
+
+1. 이어 붙일 사진 파일 여러개 오픈
+
+2. 풀다운 메뉴 :  파일(file) → 자동화(automate) → photomerge → add open file
+
+3. 비어있는 윤곽 정리 
+
+   (1) 선택툴 : 크롭 → 잘라내기
+
+   (2) cmd + t →  사진 확대
+
+4. 레이어 합치기(layer-merge) : 레이어 패널에서 합칠 레이어 선택 + (cmd + e)
+
+
+
 ## content-aware scale
 
 (1) 배경 사진위의 개체를 선택툴로 선택한다
@@ -37,6 +55,8 @@
 
 (9-4) healing brush tool 로 마무리 한다. 
 
+
+
 ## 배경 붙여넣기
 
 (1) 원본 이미지에서 배경을 퀵 셀렉션 툴로 선택한다.
@@ -55,6 +75,26 @@
 (5) 새 레이어를 추가한 뒤 배경이 될 이미지를 복사하여 가져온다. (4)에서 만든 레이어 아래에 깔아서 배경이 뒤에 깔리도록 한다.
 
 (6) 인물이 있는 (4)의 레이어를 선택한 후 풀다운 메뉴 image → adjustment → color balance 를 선택하여 배경에 맞게 이미지 색상을 보정한다.
+
+
+
+## 광각 사진 보정
+
+좁은 공간을 넓게 보여주려고 할 때, 원근감을 주어 표현하는데 공간이 지나치게 휘어 부자연스럽게 나오는 경우가 많다. 해당 부분을 보정할 수 있다.
+
+1. adaptive wide angle
+
+   - 풀다운 메뉴 filter -> adaptive wide angle
+
+   - 왼쪽 툴 패널에 constraint tool이 선택된 상태에서 휘어진 공간을 따라 좌표를 클릭 하여 찍는다. 
+   - 찍은 좌표를 따라 휘어진 공간이 펴진다. 휘어진 수평, 수직 부분을 수정한다.
+   - 손실된 레이어는 스탬프 툴 및 힐링 툴로 보정한다. 
+
+2. Lens correction
+   - 풀다운 메뉴 filter -> Lens correction -> 오른쪽 패널에서 custom 탭 클릭
+   - geometric distortion 조절
+   - vertical perspective, horizontal perspective 조절
+   - vignette는 명암 효과(필름 효과)를 준다. 
 
 
 
